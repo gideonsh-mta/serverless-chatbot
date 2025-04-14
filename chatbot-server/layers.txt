@@ -1,0 +1,20 @@
+Creating the ai layer
+
+Prerequisite:
+In my local computer i created a nodejs folder and used npm to download google ai library.
+than i exported the folder and the neccessary files into a zip folder.
+I uploaded the zip folder into Amazon s3 bucket that i created for this exercise to be used for the lambda function layer.
+
+Steps:
+1. in aws search bar i typed "lambda"
+2. from the left side there was a sidebar with categories so i picked > "Additional resources" > "Layers"
+3. I push the button "Create layer"
+4. i gave the layer:
+    4.1. name
+    4.2. upload a file from Amazon s3
+    4.3. choose Compatible architectures
+    4.4. choose compatible runtimes
+    4.5. pushed Create
+5. than after i had a layer ready to use, in Lambda > Function > "my lambda name", i choose "Layers", and pushed "Add a layer"
+6. i choose "Custom layers" and choose the layer that i created in step 4 name.
+7. now i was able to use the layer and start to use the ai api (gemini)
